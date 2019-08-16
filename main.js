@@ -5,32 +5,26 @@ const boxen = require('boxen');
 const chalk = require('chalk');
 const gradient = require('gradient-string');
 
-const options = {
-    padding: 1,
-    margin: 1,
-    borderStyle: 'round'
-}
-
 const cardData = {
-    labelWork: chalk.white.bold('           Job Title:'),
-    labelGitHub: chalk.white.bold('         GitHub:'),
-    labelLinkedIn: chalk.white.bold('       LinkedIn:'),
-    labelBehance: chalk.white.bold('        Behance:'),
-    labelFacebook: chalk.white.bold('       Facebook:'),
-    labelInstagram: chalk.white.bold('      Instagram:'),
+    labelWork: chalk.hex('#80D4D9').bold('           Job Title:'),
+    labelGitHub: chalk.hex('#4CEBB8').bold('         GitHub:'),
+    labelLinkedIn: chalk.hex('#229AE0').bold('       LinkedIn:'),
+    labelBehance: chalk.hex('#3F5FF2').bold('        Behance:'),
+    labelFacebook: chalk.hex('#8149DD').bold('       Facebook:'),
+    labelInstagram: chalk.hex('#C150B1').bold('      Instagram:'),
     labelProgramming: chalk.white.bold('    Programming:'),
     labelLanguages: chalk.white.bold('      Languages:'),
 
     name: gradient.pastel('                 Allison Van Linden'),
     handle: chalk.white('npx card'),
     work: chalk.white('Junior Web Developer at BeCode.org'),
-    github: chalk.gray('https://github.com/') + chalk.green('lisonallie'),
-    linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('allison-van-linden-17451965'),
-    behance: chalk.gray('https://behance.net/') + chalk.red('AllisonVanLinden'),
+    github: chalk.gray('https://github.com/') + chalk.red('lisonallie'),
+    linkedin: chalk.gray('https://linkedin.com/in/') + chalk.cyan('allison-van-linden-17451965'),
+    behance: chalk.gray('https://behance.net/') + chalk.green('AllisonVanLinden'),
     facebook: chalk.gray('https://facebook.com/') + chalk.white('LyssiArt'),
     instagram: chalk.gray('https://instagram/com/') + chalk.blue('lyssi_artist'),
     program: chalk.cyan('HTML') + chalk.red('CSS') + chalk.white('JavaScript') + chalk.gray('PHP') + chalk.green('SQL') + chalk.blue('node.js'),
-    language: chalk.white('Fluent:') + chalk.green('English, Dutch   ') + chalk.white('Beginner:') + chalk.cyan('French, Japanese')
+    language: chalk.black.bgGreen('Fluent:') + chalk.green(' English, Dutch ') + chalk.black.bgYellow('Beginner:') + chalk.cyan(' French, Japanese')
 }
 
 
@@ -58,6 +52,8 @@ let cardText = heading + // cardData.name + cardData.handle
     programming + newline + //cardData.labelProgramming + cardData.program
     languageing + newline; //cardData.labelLanguages + cardData.language
 
-boxen(cardText, options);
-
-console.log(boxen(cardText));
+console.log(boxen(cardText, {
+    padding: 1,
+    margin: 1,
+    borderStyle: 'round'
+}));

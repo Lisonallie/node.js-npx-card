@@ -22,8 +22,8 @@ const cardData = {
     linkedin: chalk.hex('#958C94')('https://linkedin.com/in/') + chalk.hex('#0E6EA7').bold('allison-van-linden-17451965'),
     behance: chalk.hex('#958C94')('https://behance.net/') + chalk.hex('#152C98').bold('AllisonVanLinden'),
     facebook: chalk.hex('#958C94')('https://facebook.com/') + chalk.hex('#2101EF').bold('LyssiArt'),
-    instagram: chalk.hex('#958C94')('https://instagram/com/') + chalk.hex('#5506D6').bold('lyssi_artist'),
-    program: chalk.hex('#CC13B2').bold('HTML   ') + chalk.hex('#F230D6').bold('CSS    ') + chalk.hex('#E568D3').bold('JavaScript    ') + chalk.hex('#FC9BEF').bold('PHP    ') + chalk.hex('#FFC5F7').bold('SQL   ') + chalk.hex('#FFF6FE').bold('node.js'),
+    instagram: chalk.hex('#958C94')('https://instagram.com/') + chalk.hex('#5506D6').bold('lyssi_artist'),
+    program: chalk.hex('#CC13B2').bold('HTML   ') + chalk.hex('#F230D6').bold('CSS    ') + chalk.hex('#E568D3').bold('JavaScript    ') + chalk.hex('#FC9BEF').bold('PHP    ') + chalk.hex('#FFC5F7').bold('SQL   ') + chalk.hex('#FFFFFF').bold('node.js'),
     language: chalk.hex('#958C94')('Fluent:') + chalk.hex('#E2302D').bold(' English, Dutch ') + chalk.hex('#958C94')('Beginner:') + chalk.hex('#AE211F').bold(' French, Japanese')
 }
 

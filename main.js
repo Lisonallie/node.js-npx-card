@@ -12,21 +12,22 @@ const options = {
 }
 
 const cardData = {
-    labelWork: chalk.white('       Job Title:'),
-    labelGitHub: chalk.white('     GitHub:'),
-    labelLinkedIn: chalk.white('   LinkedIn:'),
-    labelBehance: chalk.white('        Behance:'),
-    labelFacebook: chalk.white('       Facebook:'),
-    labelInstagram: chalk.white('      Instagram:'),
-    labelProgramming: chalk.white('    Programming Languages:'),
-    labelLanguages: chalk.white('      Languages:'),
-    name: gradient.pastel('              Allison Van Linden'),
+    labelWork: chalk.white.bold('           Job Title:'),
+    labelGitHub: chalk.white.bold('         GitHub:'),
+    labelLinkedIn: chalk.white.bold('       LinkedIn:'),
+    labelBehance: chalk.white.bold('        Behance:'),
+    labelFacebook: chalk.white.bold('       Facebook:'),
+    labelInstagram: chalk.white.bold('      Instagram:'),
+    labelProgramming: chalk.white.bold('    Programming:'),
+    labelLanguages: chalk.white.bold('      Languages:'),
+
+    name: gradient.pastel('                 Allison Van Linden'),
     handle: chalk.white('npx card'),
     work: chalk.white('Junior Web Developer at BeCode.org'),
     github: chalk.gray('https://github.com/') + chalk.green('lisonallie'),
     linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('allison-van-linden-17451965'),
-    behance: chalk.cyan('https://behance.net/') + chalk.red('AllisonVanLinden'),
-    facebook: chalk.red('https://facebook.com/') + chalk.white('LyssiArt'),
+    behance: chalk.gray('https://behance.net/') + chalk.red('AllisonVanLinden'),
+    facebook: chalk.gray('https://facebook.com/') + chalk.white('LyssiArt'),
     instagram: chalk.gray('https://instagram/com/') + chalk.blue('lyssi_artist'),
     program: chalk.cyan('HTML') + chalk.red('CSS') + chalk.white('JavaScript') + chalk.gray('PHP') + chalk.green('SQL') + chalk.blue('node.js'),
     language: chalk.white('Fluent:') + chalk.green('English, Dutch   ') + chalk.white('Beginner:') + chalk.cyan('French, Japanese')
@@ -59,4 +60,4 @@ let cardText = heading + // cardData.name + cardData.handle
 
 boxen(cardText, options);
 
-console.log(cardText);
+console.log(boxen(cardText));

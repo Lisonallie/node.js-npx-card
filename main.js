@@ -17,14 +17,14 @@ const cardData = {
 
     name: gradient.pastel('                 Allison Van Linden'),
     handle: chalk.white('npx card'),
-    work: chalk.white('Junior Web Developer at BeCode.org'),
-    github: chalk.gray('https://github.com/') + chalk.hex('#2B8E6E').bold('lisonallie'),
-    linkedin: chalk.gray('https://linkedin.com/in/') + chalk.hex('#0E6EA7').bold('allison-van-linden-17451965'),
-    behance: chalk.gray('https://behance.net/') + chalk.hex('#152C98').bold('AllisonVanLinden'),
-    facebook: chalk.gray('https://facebook.com/') + chalk.hex('#2101EF').bold('LyssiArt'),
-    instagram: chalk.gray('https://instagram/com/') + chalk.hex('#5506D6').bold('lyssi_artist'),
-    program: chalk.cyan('HTML') + chalk.red('CSS') + chalk.white('JavaScript') + chalk.gray('PHP') + chalk.green('SQL') + chalk.blue('node.js'),
-    language: chalk.black.bgGreen('Fluent:') + chalk.green(' English, Dutch ') + chalk.black.bgYellow('Beginner:') + chalk.cyan(' French, Japanese')
+    work: chalk.white.bold('Junior Web Developer at BeCode.org'),
+    github: chalk.hex('#958C94')('https://github.com/') + chalk.hex('#2B8E6E').bold('lisonallie'),
+    linkedin: chalk.hex('#958C94')('https://linkedin.com/in/') + chalk.hex('#0E6EA7').bold('allison-van-linden-17451965'),
+    behance: chalk.hex('#958C94')('https://behance.net/') + chalk.hex('#152C98').bold('AllisonVanLinden'),
+    facebook: chalk.hex('#958C94')('https://facebook.com/') + chalk.hex('#2101EF').bold('LyssiArt'),
+    instagram: chalk.hex('#958C94')('https://instagram/com/') + chalk.hex('#5506D6').bold('lyssi_artist'),
+    program: chalk.hex('#CC13B2').bold('HTML   ') + chalk.hex('#F230D6').bold('CSS    ') + chalk.hex('#E568D3').bold('JavaScript    ') + chalk.hex('#FC9BEF').bold('PHP    ') + chalk.hex('#FFC5F7').bold('SQL   ') + chalk.hex('#FFF6FE').bold('node.js'),
+    language: chalk.hex('#958C94')('Fluent:') + chalk.hex('#E2302D').bold(' English, Dutch ') + chalk.hex('#958C94')('Beginner:') + chalk.hex('#AE211F').bold(' French, Japanese')
 }
 
 

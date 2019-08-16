@@ -18,6 +18,7 @@ const cardData = {
     name: gradient.pastel('                 Allison Van Linden'),
     handle: chalk.white('npx card'),
     work: chalk.white.bold('Junior Web Developer at BeCode.org'),
+    email: chalk.hex('#E2E2E2')('                       allisonvanlinden@gmail.com'),
     github: chalk.hex('#958C94')('https://github.com/') + chalk.hex('#2B8E6E').bold('lisonallie'),
     linkedin: chalk.hex('#958C94')('https://linkedin.com/in/') + chalk.hex('#0E6EA7').bold('allison-van-linden-17451965'),
     behance: chalk.hex('#958C94')('https://behance.net/') + chalk.hex('#152C98').bold('AllisonVanLinden'),
@@ -32,6 +33,7 @@ const cardData = {
 const newline = '\n';
 const heading = `${cardData.name} / ${cardData.handle}`;
 const working = `${cardData.labelWork}  ${cardData.work}`;
+const emailing = `${cardData.email}`;
 const githubbing = `${cardData.labelGitHub}  ${cardData.github}`;
 const linkedining = `${cardData.labelLinkedIn}  ${cardData.linkedin}`;
 const behanceing = `${cardData.labelBehance}  ${cardData.behance}`;
@@ -43,7 +45,8 @@ const languageing = `${cardData.labelLanguages}  ${cardData.language}`;
 // Put all our output together into a single variable so we can use boxen effectively
 let cardText = heading + // cardData.name + cardData.handle
     newline + newline + // Add one whole blank line
-    working + newline + newline + // cardData.labelWork + cardData.work
+    working + newline + // cardData.labelWork + cardData.work
+    emailing + newline + newline + // cardData.email
     githubbing + newline + // cardData.labelTwitter + cardData.twitter
     linkedining + newline + // cardData.labelnpm + cardData.npm
     behanceing + newline + // cardData.labelGitHub + cardData.github

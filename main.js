@@ -15,7 +15,7 @@ const cardData = {
     labelProgramming: chalk.hex('#C150B1').bold('    Programming:'),
     labelLanguages: chalk.hex('#FF5D5B').bold('      Languages:'),
 
-    name: gradient.pastel('                 Allison Van Linden'),
+    name: chalk.bold(gradient.pastel('                 Allison Van Linden')),
     handle: chalk.white('npx card'),
     work: chalk.white.bold('Junior Web Developer at BeCode.org'),
     email: chalk.hex('#E2E2E2')('                       allisonvanlinden@gmail.com'),

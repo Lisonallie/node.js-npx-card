@@ -5,7 +5,6 @@ const boxen = require('boxen');
 const chalk = require('chalk');
 const gradient = require('gradient-string');
 
-
 const options = {
     padding: 1,
     margin: 1,
@@ -30,7 +29,7 @@ const cardData = {
     facebook: chalk.red('https://facebook.com/') + chalk.white('LyssiArt'),
     instagram: chalk.gray('https://instagram/com/') + chalk.blue('lyssi_artist'),
     program: chalk.cyan('HTML') + chalk.red('CSS') + chalk.white('JavaScript') + chalk.gray('PHP') + chalk.green('SQL') + chalk.blue('node.js'),
-    language: chalk.white('Fluent:') + chalk.green('English, Dutch') + chalk.white('Beginner:') + chalk.cyan('French, Japanese')
+    language: chalk.white('Fluent:') + chalk.green('English, Dutch   ') + chalk.white('Beginner:') + chalk.cyan('French, Japanese')
 }
 
 
@@ -47,7 +46,7 @@ const programming = `${cardData.labelProgramming}  ${cardData.program}`;
 const languageing = `${cardData.labelLanguages}  ${cardData.language}`;
 
 // Put all our output together into a single variable so we can use boxen effectively
-const cardText = heading + // cardData.name + cardData.handle
+let cardText = heading + // cardData.name + cardData.handle
     newline + newline + // Add one whole blank line
     working + newline + newline + // cardData.labelWork + cardData.work
     githubbing + newline + // cardData.labelTwitter + cardData.twitter
@@ -56,6 +55,8 @@ const cardText = heading + // cardData.name + cardData.handle
     facebooking + newline + // cardData.labelLinkedIn + cardData.linkedin
     instagramming + newline + newline + // cardData.labelWeb + cardData.web
     programming + newline + //cardData.labelProgramming + cardData.program
-    languageing + newline + //cardData.labelLanguages + cardData.language
+    languageing + newline; //cardData.labelLanguages + cardData.language
 
-chalk.green(boxen(cardText, options))
+boxen(cardText, options);
+
+console.log(cardText);

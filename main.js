@@ -6,23 +6,23 @@ const chalk = require('chalk');
 const gradient = require('gradient-string');
 
 const cardData = {
-    labelWork: chalk.hex('#80D4D9').bold('           Job Title:'),
+    labelWork: chalk.hex('#28D5FF').bold('           Job Title:'),
     labelGitHub: chalk.hex('#4CEBB8').bold('         GitHub:'),
     labelLinkedIn: chalk.hex('#229AE0').bold('       LinkedIn:'),
     labelBehance: chalk.hex('#3F5FF2').bold('        Behance:'),
-    labelFacebook: chalk.hex('#8149DD').bold('       Facebook:'),
-    labelInstagram: chalk.hex('#C150B1').bold('      Instagram:'),
-    labelProgramming: chalk.white.bold('    Programming:'),
-    labelLanguages: chalk.white.bold('      Languages:'),
+    labelFacebook: chalk.hex('#563DF9').bold('       Facebook:'),
+    labelInstagram: chalk.hex('#8149DD').bold('      Instagram:'),
+    labelProgramming: chalk.hex('#C150B1').bold('    Programming:'),
+    labelLanguages: chalk.hex('#FF5D5B').bold('      Languages:'),
 
     name: gradient.pastel('                 Allison Van Linden'),
     handle: chalk.white('npx card'),
     work: chalk.white('Junior Web Developer at BeCode.org'),
-    github: chalk.gray('https://github.com/') + chalk.red('lisonallie'),
-    linkedin: chalk.gray('https://linkedin.com/in/') + chalk.cyan('allison-van-linden-17451965'),
-    behance: chalk.gray('https://behance.net/') + chalk.green('AllisonVanLinden'),
-    facebook: chalk.gray('https://facebook.com/') + chalk.white('LyssiArt'),
-    instagram: chalk.gray('https://instagram/com/') + chalk.blue('lyssi_artist'),
+    github: chalk.gray('https://github.com/') + chalk.hex('#2B8E6E').bold('lisonallie'),
+    linkedin: chalk.gray('https://linkedin.com/in/') + chalk.hex('#0E6EA7').bold('allison-van-linden-17451965'),
+    behance: chalk.gray('https://behance.net/') + chalk.hex('#152C98').bold('AllisonVanLinden'),
+    facebook: chalk.gray('https://facebook.com/') + chalk.hex('#2101EF').bold('LyssiArt'),
+    instagram: chalk.gray('https://instagram/com/') + chalk.hex('#5506D6').bold('lyssi_artist'),
     program: chalk.cyan('HTML') + chalk.red('CSS') + chalk.white('JavaScript') + chalk.gray('PHP') + chalk.green('SQL') + chalk.blue('node.js'),
     language: chalk.black.bgGreen('Fluent:') + chalk.green(' English, Dutch ') + chalk.black.bgYellow('Beginner:') + chalk.cyan(' French, Japanese')
 }
@@ -50,7 +50,7 @@ let cardText = heading + // cardData.name + cardData.handle
     facebooking + newline + // cardData.labelLinkedIn + cardData.linkedin
     instagramming + newline + newline + // cardData.labelWeb + cardData.web
     programming + newline + //cardData.labelProgramming + cardData.program
-    languageing + newline; //cardData.labelLanguages + cardData.language
+    languageing; //cardData.labelLanguages + cardData.language
 
 console.log(boxen(cardText, {
     padding: 1,

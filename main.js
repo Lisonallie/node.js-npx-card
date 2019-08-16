@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 // 👆 Used to tell Node.js that this is a CLI tool
 
-'use strict'
-
-const boxen = require('boxen')
-const chalk = require('chalk')
-const gradient = require('gradient-string')
+const boxen = require('boxen');
+const chalk = require('chalk');
+const gradient = require('gradient-string');
 
 
 const options = {
@@ -36,17 +34,17 @@ const cardData = {
 }
 
 
-// Actual strings we're going to output
-const newline = '\n'
-const heading = `${cardData.name} / ${cardData.handle}`
-const working = `${cardData.labelWork}  ${cardData.work}`
-const githubbing = `${cardData.labelGitHub}  ${cardData.github}`
-const linkedining = `${cardData.labelLinkedIn}  ${cardData.linkedin}`
-const behanceing = `${cardData.labelBehance}  ${cardData.behance}`
-const facebooking = `${cardData.labelFacebook}  ${cardData.facebook}`
-const instagramming = `${cardData.labelInstagram}  ${cardData.instagram}`
-const programming = `${cardData.labelProgramming}  ${cardData.program}`
-const languageing = `${cardData.labelLanguages}  ${cardData.language}`
+// Actual strings to output
+const newline = '\n';
+const heading = `${cardData.name} / ${cardData.handle}`;
+const working = `${cardData.labelWork}  ${cardData.work}`;
+const githubbing = `${cardData.labelGitHub}  ${cardData.github}`;
+const linkedining = `${cardData.labelLinkedIn}  ${cardData.linkedin}`;
+const behanceing = `${cardData.labelBehance}  ${cardData.behance}`;
+const facebooking = `${cardData.labelFacebook}  ${cardData.facebook}`;
+const instagramming = `${cardData.labelInstagram}  ${cardData.instagram}`;
+const programming = `${cardData.labelProgramming}  ${cardData.program}`;
+const languageing = `${cardData.labelLanguages}  ${cardData.language}`;
 
 // Put all our output together into a single variable so we can use boxen effectively
 const cardText = heading + // cardData.name + cardData.handle
@@ -60,8 +58,4 @@ const cardText = heading + // cardData.name + cardData.handle
     programming + newline + //cardData.labelProgramming + cardData.program
     languageing + newline + //cardData.labelLanguages + cardData.language
 
-chalk.green(boxen(`cardText`, options))
-
-// fs.writeFileSync(path.join(__filename, ''), chalk.green(boxen(output, options)))
-
-// let coolGradient = gradient(['#FF0000', '#00FF00', '#0000FF']);
+chalk.green(boxen(cardText, options))
